@@ -1,0 +1,25 @@
+.services {
+  padding: 50px;
+  text-align: center;
+}
+
+.services h2 {
+  color: #0078d7;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center;
+}

@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hire-professional/static/css/main.fe3ce297.css",
-    "main.js": "/hire-professional/static/js/main.f8b48736.js",
+    "main.js": "/hire-professional/static/js/main.c5ca6002.js",
     "index.html": "/hire-professional/index.html",
     "main.fe3ce297.css.map": "/hire-professional/static/css/main.fe3ce297.css.map",
-    "main.f8b48736.js.map": "/hire-professional/static/js/main.f8b48736.js.map"
+    "main.c5ca6002.js.map": "/hire-professional/static/js/main.c5ca6002.js.map"
   },
   "entrypoints": [
     "static/css/main.fe3ce297.css",
-    "static/js/main.f8b48736.js"
+    "static/js/main.c5ca6002.js"
   ]
 }

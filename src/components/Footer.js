@@ -1,11 +1,9 @@
 import "./Footer.css";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 Hire Professional. All rights reserved.</p>
+      <p>© 2025 HirePro — All Rights Reserved.</p>
     </footer>
   );
 }
-
-export default Footer;

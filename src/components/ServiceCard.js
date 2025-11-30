@@ -1,13 +1,10 @@
 import "./ServiceCard.css";
 
-function ServiceCard({ title, description }) {
+export default function ServiceCard({ title, img }) {
   return (
     <div className="service-card">
+      <img src={img} alt={title} />
       <h3>{title}</h3>
-      <p>{description}</p>
-      <button>Hire Now</button>
     </div>
   );
 }
-
-export default ServiceCard;

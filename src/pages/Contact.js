@@ -1,43 +1,15 @@
-import { useState } from "react";
-import "./Contact.css";
+import React from "react";
+import Navbar from "../components/Navbar";
 
-function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message sent successfully!");
-    setForm({ name: "", email: "", message: "" });
-  };
-
+export default function Contact() {
   return (
-    <div className="contact">
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="text" 
-          placeholder="Your Name" 
-          value={form.name}
-          onChange={(e) => setForm({ ...form, name: e.target.value })}
-          required 
-        />
-        <input 
-          type="email" 
-          placeholder="Your Email" 
-          value={form.email}
-          onChange={(e) => setForm({ ...form, email: e.target.value })}
-          required 
-        />
-        <textarea 
-          placeholder="Your Message"
-          value={form.message}
-          onChange={(e) => setForm({ ...form, message: e.target.value })}
-          required 
-        />
-        <button type="submit">Send</button>
-      </form>
+    <div>
+      <Navbar />
+      <div style={{ padding: "30px" }}>
+        <h1>Contact Us</h1>
+        <p>Email: support@hirepro.com</p>
+        <p>Phone: +91 12345 67890</p>
+      </div>
     </div>
   );
 }
-
-export default Contact;

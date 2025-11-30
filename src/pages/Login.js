@@ -1,41 +1,38 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
-function Login() {
-  const [email, setEmail] = useState("");
+export default function Login() {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    if (email && password) {
-      localStorage.setItem("user", JSON.stringify({ email }));
-      alert("Login Successful!");
-      window.location.href = "/";
-    }
+  const handleLogin = () => {
+    // demo login, no validation
+    localStorage.setItem("isLoggedIn", "true");
+    navigate("/home");
   };
 
   return (
-    <div className="login">
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
+    <div className="login-page">
+      <h1 className="login-logo">HirePro</h1>
+
+      <div className="login-container">
+        <h2>Login</h2>
         <input 
-          type="email" 
-          placeholder="Enter your email" 
-          value={email}
-          onChange={(e) => setEmail(e.target.value)} 
-          required
+          type="text" 
+          placeholder="Username" 
+          value={username} 
+          onChange={(e) => setUsername(e.target.value)} 
         />
         <input 
           type="password" 
-          placeholder="Enter password"
-          value={password}
+          placeholder="Password" 
+          value={password} 
           onChange={(e) => setPassword(e.target.value)} 
-          required
         />
-        <button type="submit">Login</button>
-      </form>
+        <button onClick={handleLogin}>Login</button>
+      </div>
     </div>
   );
 }
-
-export default Login;

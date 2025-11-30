@@ -1,0 +1,40 @@
+.about-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.about-container p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 18px;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.about-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.about-item:hover {
+  transform: scale(1.05);
+}
+
+.about-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.about-item h4 {
+  padding: 10px 0;
+}

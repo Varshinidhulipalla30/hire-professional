@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hire-professional/static/css/main.6e50b18f.css",
+    "main.js": "/hire-professional/static/js/main.8e5885f3.js",
+    "index.html": "/hire-professional/index.html",
+    "main.6e50b18f.css.map": "/hire-professional/static/css/main.6e50b18f.css.map",
+    "main.8e5885f3.js.map": "/hire-professional/static/js/main.8e5885f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e50b18f.css",
+    "static/js/main.8e5885f3.js"
+  ]
+}

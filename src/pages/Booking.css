@@ -1,0 +1,19 @@
+.book-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 15px;
+}
+
+.book-form input,
+.book-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.book-form button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
